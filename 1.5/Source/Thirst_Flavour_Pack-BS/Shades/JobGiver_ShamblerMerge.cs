@@ -31,6 +31,7 @@ public class JobGiver_ShamblerMerge: ThinkNode_JobGiver
         }
 
         bool alreadyMerging = pawn.CurJob != null && pawn.CurJob.def == Thirst_Flavour_PackDefOf.MSS_Thirst_Merge_Shades;
+
         if (alreadyMerging)
         {
             return null;

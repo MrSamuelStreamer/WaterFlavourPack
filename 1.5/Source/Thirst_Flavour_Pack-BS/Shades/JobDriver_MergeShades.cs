@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using RimWorld;
-using Thirst_Flavour_Pack.BS;
 using Verse;
 using Verse.AI;
 
@@ -11,9 +10,10 @@ public class JobDriver_MergeShades : JobDriver
 {
     public void MergeShades()
     {
-        Hediff hediff = pawn.health.GetOrAddHediff(Thirst_Flavour_Pack_BS_DefOf.MSS_Thirst_MergedShade);
+        Hediff hediffA = pawn.health.GetOrAddHediff(Thirst_Flavour_Pack_BS_DefOf.MSS_Thirst_MergedShade);
+        Hediff hediffB = TargetPawnB.health.GetOrAddHediff(Thirst_Flavour_Pack_BS_DefOf.MSS_Thirst_MergedShade);
 
-        hediff.Severity++;
+        hediffA.Severity += hediffB.Severity;
 
         string nameB = TargetPawnB.NameFullColored;
         TargetPawnB.Destroy(DestroyMode.Vanish);
