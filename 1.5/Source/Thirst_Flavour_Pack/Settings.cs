@@ -35,16 +35,19 @@ public class Settings : ModSettings
 
     public Faction FinalFightFaction => WorldNameForFaction != Current.Game.World.ToString() ? null : finalFightFaction;
 
+    public float ChanceToMerge = 0.005f;
+
     public void DoWindowContents(Rect wrect)
     {
         bool showFactionSelector = Current.ProgramState == ProgramState.Playing;
 
-        int labels = 10;
+        int labels = 11;
         int intAdjuster = 6;
         int intEntries = 6;
         int intRanges = 2;
         int labeledCheckbox = 1;
-        int gaps = 3;
+        int slider = 1;
+        int gaps = 4;
 
         float optionsViewRectHeight = (labels * 21.3333333f) +
                                       (intAdjuster * 24f) +
@@ -52,6 +55,7 @@ public class Settings : ModSettings
                                       (intRanges * 32f) +
                                       (labeledCheckbox * 21.33333f) +
                                       (gaps * 12f) +
+                                      (slider * 22f) +
                                       32f + 30f;
 
         if (showFactionSelector)
@@ -138,6 +142,11 @@ public class Settings : ModSettings
 
         options.Gap();
 
+        options.Label("MSS_Thirst_Settings_ChanceToMerge".Translate((ChanceToMerge * 100f).ToString("0.0000")));
+        ChanceToMerge = options.Slider( ChanceToMerge, 0.0001f, 1f);
+
+        options.Gap();
+
         options.End();
 
         Widgets.EndScrollView();
@@ -158,5 +167,6 @@ public class Settings : ModSettings
         Scribe_Values.Look(ref FinalFightRaidFactor, "FinalFightRaidFactor", new FloatRange(1f, 2f));
         Scribe_References.Look(ref finalFightFaction, "finalFightFaction", false);
         Scribe_Values.Look(ref WorldNameForFaction, "WorldNameForFaction");
+        Scribe_Values.Look(ref ChanceToMerge, "ChanceToMerge", 0.005f);
     }
 }

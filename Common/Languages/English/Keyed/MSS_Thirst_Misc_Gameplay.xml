@@ -37,4 +37,7 @@
     <GameOverArchotechInvokedEnding>\n</GameOverArchotechInvokedEnding>
     <GameOverColonistsTranscended>A blinking prompt on a screen on one of the machines poses a question. It has cleansed the water in the immediate area, do you want to proceed to planet-wide cleansing, or maintain local only?\n\nIf you were to choose local only, you could have all the power you desired. Every colony, faction, tribe would be beholden to you for clean, safe water.\nOr you could be heroes, give the gift to the whole world, then return your old, but improved life.\n\nThese colonists have a decision to make:\n{0}</GameOverColonistsTranscended>
 
+    <MSS_Thirst_Settings_ChanceToMerge>Chance for shades to merge: {0}%</MSS_Thirst_Settings_ChanceToMerge>
+
+    <MSS_Thirst_Shade_Merge>{0} merged with {1} to form a more powerful shade!</MSS_Thirst_Shade_Merge>
 </LanguageData>
