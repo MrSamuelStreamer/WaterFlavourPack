@@ -14,5 +14,6 @@
 		<li IfModActive="ludeon.rimworld.ideology">Compatibility/ludeon.rimworld.ideology</li>
 		<li IfModActive="sarg.alphapropsparks">Compatibility/sarg.alphapropsparks</li>
 		<li IfModActive="garryflowers.moreslaverystuff">Compatibility/garryflowers.moreslaverystuff</li>
+		<li IfModActive="RedMattis.BetterPrerequisites">Compatibility/redmattis.betterprerequisites/1.5</li>
 	</v1.5>
 </loadFolders>

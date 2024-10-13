@@ -40,4 +40,5 @@
     <MSS_Thirst_Settings_ChanceToMerge>Chance for shades to merge: {0}%</MSS_Thirst_Settings_ChanceToMerge>
 
     <MSS_Thirst_Shade_Merge>{0} merged with {1} to form a more powerful shade!</MSS_Thirst_Shade_Merge>
+    <MSS_Thirst_Shade_Merging>{0} is merging with {1} to form a more powerful shade!</MSS_Thirst_Shade_Merging>
 </LanguageData>

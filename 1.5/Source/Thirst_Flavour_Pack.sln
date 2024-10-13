@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thirst_Flavour_Pack", "Thir
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thirst_Flavour_Pack-VEF", "Thirst_Flavour_Pack-VEF\Thirst_Flavour_Pack-VEF.csproj", "{E8D027F3-D858-432B-8409-21DF096D4DC7}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thirst_Flavour_Pack-BS", "Thirst_Flavour_Pack-BS\Thirst_Flavour_Pack-BS.csproj", "{2CE392D4-6699-46B5-8834-97DADB67C772}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E8D027F3-D858-432B-8409-21DF096D4DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8D027F3-D858-432B-8409-21DF096D4DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8D027F3-D858-432B-8409-21DF096D4DC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CE392D4-6699-46B5-8834-97DADB67C772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CE392D4-6699-46B5-8834-97DADB67C772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CE392D4-6699-46B5-8834-97DADB67C772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CE392D4-6699-46B5-8834-97DADB67C772}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -37,5 +37,6 @@ public static class Thirst_Flavour_PackDefOf
     public static RecipeDef MSS_Thirst_Make_ComponentArcho;
 
     public static JobDef MSS_Thirst_Merge_Shades;
+
     static Thirst_Flavour_PackDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(Thirst_Flavour_PackDefOf));
 }

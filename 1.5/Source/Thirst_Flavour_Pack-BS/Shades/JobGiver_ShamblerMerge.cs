@@ -3,7 +3,7 @@ using RimWorld;
 using Verse;
 using Verse.AI;
 
-namespace Thirst_Flavour_Pack.Shades;
+namespace Thirst_Flavour_Pack.BS.Shades;
 
 public class JobGiver_ShamblerMerge: ThinkNode_JobGiver
 {
@@ -48,7 +48,7 @@ public class JobGiver_ShamblerMerge: ThinkNode_JobGiver
 
         Job job = JobMaker.MakeJob(Thirst_Flavour_PackDefOf.MSS_Thirst_Merge_Shades, pawn, target);
 
-        job.reportStringOverride = reportStringOverride;
+        job.reportStringOverride = "MSS_Thirst_Shade_Merging".Translate(pawn, target);
 
         return job;
     }

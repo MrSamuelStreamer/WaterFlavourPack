@@ -1,28 +1,19 @@
 using System;
 using System.Collections.Generic;
 using RimWorld;
+using Thirst_Flavour_Pack.BS;
 using Verse;
 using Verse.AI;
 
-namespace Thirst_Flavour_Pack.Shades;
+namespace Thirst_Flavour_Pack.BS.Shades;
 
 public class JobDriver_MergeShades : JobDriver
 {
-    public Dictionary<Pawn, ShadeTrackerMapComponent.OverriddenShadeStats> ResizedShades => Map.GetComponent<ShadeTrackerMapComponent>()?.resizedShades;
     public void MergeShades()
     {
-        if (!ResizedShades.TryGetValue(pawn, out ShadeTrackerMapComponent.OverriddenShadeStats overrides))
-        {
-            overrides = new ShadeTrackerMapComponent.OverriddenShadeStats();
-            ResizedShades[pawn] = overrides;
-        }
+        Hediff hediff = pawn.health.GetOrAddHediff(Thirst_Flavour_Pack_BS_DefOf.MSS_Thirst_MergedShade);
 
-        overrides.BodySize += TargetPawnB.BodySize;
-
-        if (ResizedShades.ContainsKey(TargetPawnB))
-        {
-            ResizedShades.Remove(TargetPawnB);
-        }
+        hediff.Severity++;
 
         string nameB = TargetPawnB.NameFullColored;
         TargetPawnB.Destroy(DestroyMode.Vanish);

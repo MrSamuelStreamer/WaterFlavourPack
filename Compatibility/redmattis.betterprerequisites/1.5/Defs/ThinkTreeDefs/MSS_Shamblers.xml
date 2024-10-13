@@ -9,7 +9,7 @@
             <subNodes>
                 <li Class="ThinkNode_ConditionalCanCrawl">
                     <subNodes>
-                        <li Class="Thirst_Flavour_Pack.Shades.JobGiver_ShamblerMerge" />
+                        <li Class="Thirst_Flavour_Pack.BS.Shades.JobGiver_ShamblerMerge" />
                     </subNodes>
                 </li>
             </subNodes>

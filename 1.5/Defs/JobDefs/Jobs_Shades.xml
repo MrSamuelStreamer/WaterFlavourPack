@@ -3,7 +3,7 @@
 
   <JobDef>
     <defName>MSS_Thirst_Merge_Shades</defName>
-    <driverClass>Thirst_Flavour_Pack.Shades.JobDriver_MergeShades</driverClass>
+    <driverClass>Thirst_Flavour_Pack.BS.Shades.JobDriver_MergeShades</driverClass>
     <reportString>merging with TargetA.</reportString>
     <checkOverrideOnDamage>Never</checkOverrideOnDamage>
   </JobDef>
