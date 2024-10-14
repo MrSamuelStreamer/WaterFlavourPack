@@ -7,6 +7,15 @@
 		<li>1.5</li>
 	</supportedVersions>
 	<description>Woah, I'm so thirsty, I could really go for a Bepsi. What do you mean is coke okay? Nothing could beat the refreshing quenching flavour of Bepsi.</description>
+    <modDependenciesByVersion>
+        <v1.5>
+            <li>
+                <packageId>RedMattis.BetterPrerequisites</packageId>
+                <displayName>Big and Small - Framework</displayName>
+                <steamWorkshopUrl>steam://url/CommunityFilePage/2925432336</steamWorkshopUrl>
+            </li>
+        </v1.5>
+    </modDependenciesByVersion>
 	<loadAfter>
 		<li>ludeon.rimworld.ideology</li>
 		<li>vanillaracesexpanded.sanguophage</li>
@@ -21,5 +30,6 @@
 		<li>ladycookie.farmland</li>
 		<li>mlie.lootboxes</li>
 		<li>garryflowers.moreslaverystuff</li>
+        <li>RedMattis.BetterPrerequisites</li>
 	</loadAfter>
 </ModMetaData>

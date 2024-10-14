@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <HediffDef>
+        <defName>MSS_Thirst_MergedShade</defName>
+        <hediffClass>Thirst_Flavour_Pack.BS.Shades.Hediff_MergedShade</hediffClass>
+        <label>Merged Shade</label>
+        <labelNoun>Merged Shade</labelNoun>
+        <description>MSS_Thirst_MergedShade_Desc</description>
+        <tendable>false</tendable>
+        <initialSeverity>1</initialSeverity>
+
+    </HediffDef>
+</Defs>
