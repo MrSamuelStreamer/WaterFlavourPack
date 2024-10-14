@@ -10,6 +10,6 @@ public class StatPart_MeleeCooldownFactor: StatPart_ShadeMergeBase
     {
         if(t is not Pawn pawn) return 1f;
 
-        return !pawn.health.hediffSet.TryGetHediff(out Hediff_MergedShade hediff) ? 1f : 1/hediff.MergedMeleeCooldownFactorMultiplier;
+        return !pawn.health.hediffSet.TryGetHediff(out Hediff_MergedShade hediff) ? 1f : hediff.MergedMeleeCooldownFactorMultiplier;
     }
 }
