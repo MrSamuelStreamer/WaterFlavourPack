@@ -2,7 +2,7 @@ using Verse;
 
 namespace Thirst_Flavour_Pack.BS.Shades;
 
-public class StatPart_MoveSpeed: StatPart_ShadeMergeBase
+public class StatPart_MoveSpeed: StatPart_Multiplier
 {
     public override string ExplanationString => "MSS_Thirst_MoveSpeed";
 
@@ -10,6 +10,6 @@ public class StatPart_MoveSpeed: StatPart_ShadeMergeBase
     {
         if(t is not Pawn pawn) return 1f;
 
-        return !pawn.health.hediffSet.TryGetHediff(out Hediff_MergedShade hediff) ? 1f : 1/hediff.MergedMoveSpeedMultiplier;
+        return !pawn.health.hediffSet.TryGetHediff(out Hediff_MergedShade hediff) ? 1f : 1/hediff.MergedMoveSpeedInverseMultiplier;
     }
 }

@@ -30,7 +30,7 @@ public class JobGiver_ShamblerMerge: ThinkNode_JobGiver
             return null;
         }
 
-        bool alreadyMerging = pawn.CurJob != null && pawn.CurJob.def == Thirst_Flavour_PackDefOf.MSS_Thirst_Merge_Shades;
+        bool alreadyMerging = pawn.CurJob != null && pawn.CurJob.def == Thirst_Flavour_Pack_BS_DefOf.MSS_Thirst_Merge_Shades;
 
         if (alreadyMerging)
         {
@@ -42,12 +42,12 @@ public class JobGiver_ShamblerMerge: ThinkNode_JobGiver
 
         if (target == null)
         {
-            return null;;
+            return null;
         }
 
         pawn.mindState.nextMoveOrderIsWait = false;
 
-        Job job = JobMaker.MakeJob(Thirst_Flavour_PackDefOf.MSS_Thirst_Merge_Shades, pawn, target);
+        Job job = JobMaker.MakeJob(Thirst_Flavour_Pack_BS_DefOf.MSS_Thirst_Merge_Shades, pawn, target);
 
         job.reportStringOverride = "MSS_Thirst_Shade_Merging".Translate(pawn, target);
 

@@ -16,7 +16,6 @@
             <MeatAmount>700</MeatAmount>
             <MoveSpeed>2</MoveSpeed>
             <SM_BodySizeMultiplier>12</SM_BodySizeMultiplier>
-            <MeleeCooldownFactor>2</MeleeCooldownFactor>
             <MeleeDamageFactor>12</MeleeDamageFactor>
         </statBases>
         <tradeability>None</tradeability>

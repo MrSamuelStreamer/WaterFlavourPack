@@ -4,7 +4,7 @@ using Verse;
 
 namespace Thirst_Flavour_Pack.BS.Shades;
 
-public abstract class StatPart_ShadeMergeBase: StatPart
+public abstract class StatPart_Multiplier: StatPart
 {
     public abstract string ExplanationString { get; }
 

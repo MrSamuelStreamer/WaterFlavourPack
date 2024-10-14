@@ -4,6 +4,9 @@
     <MSS_Thirst_MeleeCooldownFactor>Merged Shades: {0}</MSS_Thirst_MeleeCooldownFactor>
     <MSS_Thirst_MeleeDamageFactor>Merged Shades: {0}</MSS_Thirst_MeleeDamageFactor>
     <MSS_Thirst_MoveSpeed>Merged Shades: {0}</MSS_Thirst_MoveSpeed>
+    <MSS_Thirst_ArmorRating_BluntFactor>Merged Shades: {0}</MSS_Thirst_ArmorRating_BluntFactor>
+    <MSS_Thirst_ArmorRating_HeatFactor>Merged Shades: {0}</MSS_Thirst_ArmorRating_HeatFactor>
+    <MSS_Thirst_ArmorRating_SharpFactor>Merged Shades: {0}</MSS_Thirst_ArmorRating_SharpFactor>
 
     <MSS_Thirst_Settings_ChanceToMerge>Chance for shades to merge: {0}%</MSS_Thirst_Settings_ChanceToMerge>
     <MSS_Thirst_Settings_ShadeMergeHediffSeverityToTransform>Shade merge hediff severity to trigger transformation</MSS_Thirst_Settings_ShadeMergeHediffSeverityToTransform>
@@ -11,4 +14,6 @@
     <MSS_Thirst_Shade_Merge>{0} merged with {1} to form a more powerful shade!</MSS_Thirst_Shade_Merge>
     <MSS_Thirst_Shade_Merging>{0} is merging with {1} to form a more powerful shade!</MSS_Thirst_Shade_Merging>
     <MSS_Thirst_Shade_Merge_Gorebeast>{0} merged with {1} to form a Gorebeast Shade!</MSS_Thirst_Shade_Merge_Gorebeast>
+
+    <MSS_Thirst_MergedShade_Desc>This shade has merged with {0} other shades.</MSS_Thirst_MergedShade_Desc>
 </LanguageData>

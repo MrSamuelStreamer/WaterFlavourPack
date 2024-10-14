@@ -2,7 +2,7 @@ using Verse;
 
 namespace Thirst_Flavour_Pack.BS.Shades;
 
-public class StatPart_BodyOffset: StatPart_ShadeMergeBase
+public class StatPart_BodyOffset: StatPart_Multiplier
 {
     public override string ExplanationString => "MSS_Thirst_BodySizeFactor";
 

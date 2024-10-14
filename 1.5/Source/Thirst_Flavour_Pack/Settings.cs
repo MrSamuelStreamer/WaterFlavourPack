@@ -35,7 +35,7 @@ public class Settings : ModSettings
 
     public Faction FinalFightFaction => WorldNameForFaction != Current.Game.World.ToString() ? null : finalFightFaction;
 
-    public float ChanceToMerge = 0.005f;
+    public float ChanceToMerge = 0.015f;
     public int ShadeMergeHediffSeverityToTransform = 10;
 
     public void DoWindowContents(Rect wrect)
@@ -158,6 +158,7 @@ public class Settings : ModSettings
 
     public override void ExposeData()
     {
+        base.ExposeData();
         Scribe_Values.Look(ref ThirstCasketHediffTickRate, "ThirstCasketHediffTickRate", 360);
         Scribe_Values.Look(ref MaxSafeWaterInNet, "MaxSafeWaterInNet", 30);
         Scribe_Values.Look(ref SafeWaterPacks, "SafeWaterPacks", 10);
@@ -171,7 +172,7 @@ public class Settings : ModSettings
         Scribe_Values.Look(ref FinalFightRaidFactor, "FinalFightRaidFactor", new FloatRange(1f, 2f));
         Scribe_References.Look(ref finalFightFaction, "finalFightFaction", false);
         Scribe_Values.Look(ref WorldNameForFaction, "WorldNameForFaction");
-        Scribe_Values.Look(ref ChanceToMerge, "ChanceToMerge", 0.005f);
+        Scribe_Values.Look(ref ChanceToMerge, "ChanceToMerge", 0.015f);
         Scribe_Values.Look(ref ShadeMergeHediffSeverityToTransform, "ShadeMergeHediffSeverityToTransform", 10);
     }
 }

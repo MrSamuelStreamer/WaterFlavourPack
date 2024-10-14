@@ -38,24 +38,6 @@
 
 
     <Operation Class="PatchOperationConditional">
-        <xpath>Defs/StatDef[defName="MeleeCooldownFactor"]/parts</xpath>
-        <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/StatDef[defName="MeleeCooldownFactor"]</xpath>
-            <value>
-                <parts />
-            </value>
-        </nomatch>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/StatDef[defName="MeleeCooldownFactor"]/parts</xpath>
-        <value>
-            <li Class="Thirst_Flavour_Pack.BS.Shades.StatPart_MeleeCooldownFactor" />
-        </value>
-    </Operation>
-
-
-    <Operation Class="PatchOperationConditional">
         <xpath>Defs/StatDef[defName="MeleeDamageFactor"]/parts</xpath>
         <nomatch Class="PatchOperationAdd">
             <xpath>Defs/StatDef[defName="MeleeDamageFactor"]</xpath>

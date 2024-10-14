@@ -16,17 +16,15 @@ public class JobDriver_MergeShades : JobDriver
         if (!TargetPawnB.health.hediffSet.TryGetHediff(Thirst_Flavour_Pack_BS_DefOf.MSS_Thirst_MergedShade, out Hediff hediffB))
         {
             hediffA.MergedBodySizeMultiplier += TargetPawnB.GetStatValue(BSDefs.SM_BodySizeMultiplier);
-            hediffA.MergedMoveSpeedMultiplier += TargetPawnB.GetStatValue(StatDefOf.MoveSpeed);
-            hediffA.MergedMeleeCooldownFactorMultiplier += TargetPawnB.GetStatValue(StatDefOf.MeleeCooldownFactor);
-            hediffA.MergedMeleeDamageFactorFactorMultiplier += TargetPawnB.GetStatValue(StatDefOf.MeleeDamageFactor);
+            hediffA.MergedMoveSpeedInverseMultiplier += TargetPawnB.GetStatValue(StatDefOf.MoveSpeed);
+            hediffA.MergedMeleeDamageFactorOffset += TargetPawnB.GetStatValue(StatDefOf.MeleeDamageFactor);
             hediffA.Severity += 1;
         }
         else
         {
             hediffA.MergedBodySizeMultiplier += ((Hediff_MergedShade) hediffB).MergedBodySizeMultiplier;
-            hediffA.MergedMoveSpeedMultiplier += ((Hediff_MergedShade) hediffB).MergedMoveSpeedMultiplier;
-            hediffA.MergedMeleeCooldownFactorMultiplier += ((Hediff_MergedShade) hediffB).MergedMeleeCooldownFactorMultiplier;
-            hediffA.MergedMeleeDamageFactorFactorMultiplier += ((Hediff_MergedShade) hediffB).MergedMeleeDamageFactorFactorMultiplier;
+            hediffA.MergedMoveSpeedInverseMultiplier += ((Hediff_MergedShade) hediffB).MergedMoveSpeedInverseMultiplier;
+            hediffA.MergedMeleeDamageFactorOffset += ((Hediff_MergedShade) hediffB).MergedMeleeDamageFactorOffset;
             hediffA.Severity += hediffB.Severity;
         }
 

@@ -2,12 +2,12 @@
 
 <Defs>
 
-    <HediffDef >
+    <HediffDef>
         <defName>MSS_Thirst_MergedShade</defName>
         <hediffClass>Thirst_Flavour_Pack.BS.Shades.Hediff_MergedShade</hediffClass>
         <label>Merged Shade</label>
         <labelNoun>Merged Shade</labelNoun>
-        <description>This shade has merged with other shades.</description>
+        <description>MSS_Thirst_MergedShade_Desc</description>
         <tendable>false</tendable>
         <initialSeverity>1</initialSeverity>
 
