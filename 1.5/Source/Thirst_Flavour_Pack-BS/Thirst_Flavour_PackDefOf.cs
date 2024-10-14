@@ -9,5 +9,7 @@ public static class Thirst_Flavour_Pack_BS_DefOf
 {
     public static HediffDef MSS_Thirst_MergedShade;
 
+    public static PawnKindDef MSS_Thirst_ShamblerGorebeast;
+
     static Thirst_Flavour_Pack_BS_DefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(Thirst_Flavour_PackDefOf));
 }

@@ -36,13 +36,14 @@ public class Settings : ModSettings
     public Faction FinalFightFaction => WorldNameForFaction != Current.Game.World.ToString() ? null : finalFightFaction;
 
     public float ChanceToMerge = 0.005f;
+    public int ShadeMergeHediffSeverityToTransform = 10;
 
     public void DoWindowContents(Rect wrect)
     {
         bool showFactionSelector = Current.ProgramState == ProgramState.Playing;
 
-        int labels = 11;
-        int intAdjuster = 6;
+        int labels = 12;
+        int intAdjuster = 7;
         int intEntries = 6;
         int intRanges = 2;
         int labeledCheckbox = 1;
@@ -145,6 +146,9 @@ public class Settings : ModSettings
         options.Label("MSS_Thirst_Settings_ChanceToMerge".Translate((ChanceToMerge * 100f).ToString("0.0000")));
         ChanceToMerge = options.Slider( ChanceToMerge, 0.0001f, 1f);
 
+        options.Label("MSS_Thirst_Settings_ShadeMergeHediffSeverityToTransform".Translate(ShadeMergeHediffSeverityToTransform));
+        options.IntAdjuster(ref ShadeMergeHediffSeverityToTransform, 1);
+
         options.Gap();
 
         options.End();
@@ -168,5 +172,6 @@ public class Settings : ModSettings
         Scribe_References.Look(ref finalFightFaction, "finalFightFaction", false);
         Scribe_Values.Look(ref WorldNameForFaction, "WorldNameForFaction");
         Scribe_Values.Look(ref ChanceToMerge, "ChanceToMerge", 0.005f);
+        Scribe_Values.Look(ref ShadeMergeHediffSeverityToTransform, "ShadeMergeHediffSeverityToTransform", 10);
     }
 }
